@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="@string/Search_by_barcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:id="@+id/sign1"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/tulis1"
+        android:layout_alignBaseline="@+id/sign1"
+        android:layout_alignBottom="@+id/sign1"
+        android:layout_toRightOf="@+id/sign1"
+        android:layout_toEndOf="@+id/sign1"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sign2"
+        android:text="@string/Search_by_name"
+        android:layout_below="@+id/sign1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/tulis2"
+        android:layout_below="@+id/tulis1"
+        android:layout_alignLeft="@+id/tulis1"
+        android:layout_alignStart="@+id/tulis1" />
+
+
+    <CheckBox android:id="@+id/checkbox_pork"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Pork"
+        android:layout_below="@+id/tulis2"/>
+
+    <CheckBox android:id="@+id/checkbox_emulsifier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Emulsifier"
+        android:layout_below="@+id/checkbox_pork"/>
+
+    <CheckBox android:id="@+id/checkbox_alcohol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Alkohol"
+        android:layout_below="@+id/checkbox_emulsifier"/>
+
+    <CheckBox android:id="@+id/checkbox_shortening"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Shortening"
+        android:layout_below="@+id/checkbox_alcohol"/>
+
+    <CheckBox android:id="@+id/checkbox_gelatin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Gelatin"
+        android:layout_below="@+id/checkbox_shortening"/>
+
+    <CheckBox android:id="@+id/checkbox_margarin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Margarin"
+        android:layout_below="@+id/checkbox_gelatin"/>
+
+    <CheckBox android:id="@+id/checkbox_butter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Butter"
+        android:layout_below="@+id/checkbox_margarin" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/by_barcode"
+        android:id="@+id/tombol1"
+        android:layout_below="@+id/checkbox_butter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/by_name"
+        android:id="@+id/tombol2"
+        android:layout_below="@+id/checkbox_butter"
+        android:layout_centerHorizontal="true"
+        android:layout_toEndOf="@+id/tombol1"
+        android:layout_toRightOf="@+id/tombol1"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/by_list"
+        android:id="@+id/tombol3"
+        android:layout_alignBaseline="@+id/tombol1"
+        android:layout_alignBottom="@+id/tombol1"
+        android:layout_toLeftOf="@+id/tombol1"
+        android:layout_toStartOf="@+id/tombol1" />
+
+
+</RelativeLayout>
