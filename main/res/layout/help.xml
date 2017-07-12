@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.newstudent.barcode_v13.Help">
+    android:layout_height="match_parent">
 
     <TextView
         android:layout_width="wrap_content"
@@ -47,8 +45,8 @@
         android:layout_below="@+id/edithelp1"
         android:layout_toRightOf="@+id/nama"
         android:layout_toEndOf="@+id/nama"
-        android:layout_marginLeft="40dp"
-        android:layout_marginStart="40dp"/>
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -69,13 +67,13 @@
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:layout_below="@+id/email"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp"
-        android:textSize="20sp"/>
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textSize="@dimen/text_size_is"/>
 
     <EditText
         android:inputType="text"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/comment_coloumn"
         android:id="@+id/textcomment"
         android:layout_below="@+id/comment"
         android:text="@string/type_comment"/>
