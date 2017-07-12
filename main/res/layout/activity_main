@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.newstudent.barcode_v13.MainActivity">
+    tools:context="com.example.newstudent.barcode_v12.MainActivity">
 
     <Button
         android:text="Button"
@@ -19,16 +19,7 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         style="@android:style/Widget.Button"
-        android:visibility="invisible" />
-
-    <Button
-        android:text="Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/idButton"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        style="@android:style/Widget.Button" />
+        android:visibility="invisible"/>
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -38,8 +29,7 @@
         android:layout_below="@+id/button"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:background="@android:drawable/btn_default"
-        android:onClick="searchFindInformation"/>
+        android:background="@android:drawable/btn_default" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -49,8 +39,7 @@
         android:layout_above="@+id/button"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:background="@android:drawable/btn_default"
-        android:onClick="searchPressBarcode"/>
+        android:background="@android:drawable/btn_default" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -60,58 +49,26 @@
         android:layout_below="@+id/button"
         android:layout_alignLeft="@+id/searching"
         android:layout_alignStart="@+id/searching"
-        android:background="@android:drawable/btn_default"
-        android:onClick="searchContactus"/>
+        android:background="@android:drawable/btn_default" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/barcode"
+        android:id="@+id/imageButton"
+        android:layout_alignBottom="@+id/scan"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:drawable/btn_default" />
 
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/head"
         android:id="@+id/searching"
-        android:onClick="searchPressSearching"
+        android:onClick="onImageButtonClick"
         android:layout_above="@+id/button"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:background="@android:drawable/btn_default" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/scan_barcode"
-        android:layout_above="@+id/scan"
-        android:layout_toLeftOf="@+id/button"
-        android:layout_toStartOf="@+id/button"
-        android:layout_marginRight="31dp"
-        android:layout_marginEnd="31dp"
-        android:id="@+id/textView3" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/scan_search"
-        android:layout_above="@+id/searching"
-        android:layout_toRightOf="@+id/button"
-        android:layout_toEndOf="@+id/button"
-        android:layout_marginLeft="31dp"
-        android:layout_marginStart="31dp"
-        android:id="@+id/textView" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/scan_information"
-        android:id="@+id/textView4"
-        android:layout_below="@+id/food"
-        android:layout_marginLeft="40dp"
-        android:layout_marginStart="40dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Help"
-        android:layout_below="@+id/help"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView"
-        android:id="@+id/textView2" />
-
 </RelativeLayout>
